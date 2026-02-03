@@ -10,24 +10,25 @@ import {
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Node.js",
-  "GraphQL",
-  "PostgreSQL",
+  "Java",
+  "Spring Boot",
+  "Postman",
+  "JDBC",
+  "Spring Data JPA",
+  "RESTful APIs",
+  "JWT Authentication",
+  "Microservices",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Docker ",
+  "MySQL",
   "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
-  "Vercel",
-  "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
+  "AI Integration",
+  "CI/CD",
   "Git",
   "GitHub Actions",
+  "Vercel",
 ];
 
 export const Hero = () => {
@@ -105,8 +106,8 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Socials: </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
+                { icon: Github, href: "https://github.com/Uzmaalia" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/uzma-aalia-bb3b79257/" },
               ].map((social, idx) => (
                 <a
                   key={idx}
@@ -145,12 +146,12 @@ export const Hero = () => {
                   </div>
                 </div>
                 {/* Stats Badge */}
-                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
+                {/* <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
                   <div className="text-2xl font-bold text-primary">5+</div>
                   <div className="text-xs text-muted-foreground">
                     Years Exp.
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
