@@ -77,17 +77,18 @@ export const Hero = () => {
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Building digital <span className="text-primary glow-text"> solutions </span>
-                 with
+                Building digital{" "}
+                <span className="text-primary glow-text"> solutions </span>
+                with
                 <br />
                 <span className="font-serif italic font-normal text-white">
                   precision.
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I’m Uzma Aalia. I build full stack applications using Java, Spring Boot, and frontend technologies.
-                I focus on clean backend logic, practical UI, and thoughtful use of AI features.
-
+                Hi, I’m Uzma Aalia. I build full stack applications using Java,
+                Spring Boot, and frontend technologies. I focus on clean backend
+                logic, practical UI, and thoughtful use of AI features.
               </p>
             </div>
 
@@ -96,10 +97,12 @@ export const Hero = () => {
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a href="/Uzma_Aalia_FullStack_Developer_Resume.pdf" download className="inline-block">
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}
@@ -107,7 +110,10 @@ export const Hero = () => {
               <span className="text-sm text-muted-foreground">Socials: </span>
               {[
                 { icon: Github, href: "https://github.com/Uzmaalia" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/uzma-aalia-bb3b79257/" },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/uzma-aalia-bb3b79257/",
+                },
               ].map((social, idx) => (
                 <a
                   key={idx}
