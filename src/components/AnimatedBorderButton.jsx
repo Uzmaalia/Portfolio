@@ -1,8 +1,9 @@
 import { Download } from "lucide-react";
 
-export const AnimatedBorderButton = ({ children }) => {
+export const AnimatedBorderButton = ({ children, ...props }) => {
   return (
     <button
+      {...props}
       className="relative bg-transparent border border-border 
         text-foreground hover:border-primary/50 transition-all 
         duration-1000 focus:outline-none focus-visible:ring-2 
@@ -19,7 +20,9 @@ export const AnimatedBorderButton = ({ children }) => {
         style={{ overflow: "visible" }}
       >
         <path
-          d="M 30,1 A 29,29 0 0 0 1,30 L 1,30 A 29,29 0 0 0 30,59 L 170,59 A 29,29 0 0 0 199,30 L 199,30 A 29,29 0 0 0 170,1 Z"
+          d="M 30,1 A 29,29 0 0 0 1,30 L 1,30 A 29,29 0 0 0 30,59 
+             L 170,59 A 29,29 0 0 0 199,30 L 199,30 
+             A 29,29 0 0 0 170,1 Z"
           fill="none"
           stroke="var(--color-primary)"
           strokeWidth="2"
@@ -30,6 +33,7 @@ export const AnimatedBorderButton = ({ children }) => {
           className="animated-border-path"
         />
       </svg>
+
       <span className="relative z-10 flex items-center justify-center gap-2">
         {children}
       </span>
