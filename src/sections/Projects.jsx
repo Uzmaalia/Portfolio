@@ -6,7 +6,15 @@ const projects = [
     description:
       "FitTrack AI is a modern microservices-based full-stack fitness platform that combines AI driven personalized workout recommendations and secure scalable architecture to deliver a smarter fitness experience.",
     image: "/projects/project1.jpg",
-    tags: ["Java", "PostgreSQL", "MongoDB", "React", "AI Integration", "Microservices", "Docker"],
+    tags: [
+      "Java",
+      "PostgreSQL",
+      "MongoDB",
+      "React",
+      "AI Integration",
+      "Microservices",
+      "Docker",
+    ],
     //link: "#",
     github: "https://github.com/Uzmaalia/FitTrack-AI",
   },
@@ -14,7 +22,7 @@ const projects = [
     title: "QuickQuiz",
     description:
       "QuickQuiz is a full stack quiz application with a Spring Boot backend and a dynamic JavaScript frontend that delivers interactive quizzes, instant results, and a smooth, engaging learning experience.",
-      image: "/projects/project2.jpg",
+    image: "/projects/project2.jpg",
     tags: ["Spring Boot", "JavaScript", "MySQL", "CSS"],
     //link: "#",
     github: "https://github.com/Uzmaalia/QuickQuiz",
@@ -134,10 +142,16 @@ export const Projects = () => {
 
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <AnimatedBorderButton>
-            View All Projects
-            <ArrowUpRight className="w-5 h-5" />
-          </AnimatedBorderButton>
+          <a
+            href="https://github.com/Uzmaalia?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AnimatedBorderButton>
+              View All Projects
+              <ArrowUpRight className="w-5 h-5" />
+            </AnimatedBorderButton>
+          </a>
         </div>
       </div>
     </section>
