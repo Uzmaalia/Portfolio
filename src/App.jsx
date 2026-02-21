@@ -5,6 +5,7 @@ import { Skill } from '@/sections/Skill'
 import { Projects } from '@/sections/Projects'
 import { Experience } from '@/sections/Experience'
 import { Contact } from '@/sections/Contact'
+import { Footer } from '@/layouts/Footer'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Experience/>
         <Contact/>
       </main>
+      <Footer/>
     </div>
   )
 }
